@@ -8,9 +8,3 @@ export type SingleTypographyToken<Named extends boolean = true, P = unknown> = S
   Named,
   P
 >;
-
-const foo = {} as SingleTypographyToken;
-
-if (typeof foo.value !== 'string') {
-  const a = foo.value.lineHeight;
-}
