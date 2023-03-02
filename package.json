@@ -9,7 +9,7 @@
     "url": "https://github.com/tokens-studio/types.git"
   },
   "type": "module",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
   ],
@@ -47,7 +47,7 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts"
+      "types": "./dist/types/index.d.ts"
     }
   },
   "prettier": {
