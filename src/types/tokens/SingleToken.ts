@@ -21,7 +21,7 @@ import { SingleBorderToken } from './SingleBorderToken';
 import { SingleAssetToken } from './SingleAssetToken';
 
 export type SingleToken<Named extends boolean = true, P = unknown> =
-  SingleColorToken<Named, P>
+  | SingleColorToken<Named, P>
   | SingleBorderRadiusToken<Named, P>
   | SingleTextToken<Named, P>
   | SingleTypographyToken<Named, P>

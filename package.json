@@ -9,7 +9,11 @@
     "url": "https://github.com/tokens-studio/types.git"
   },
   "type": "module",
-  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -19,15 +23,18 @@
     "format:eslint": "eslint --ext .js,.html . --fix",
     "format:prettier": "prettier \"**/*.{js,md}\" \"package.json\" --write",
     "lint": "run-p lint:*",
-    "lint:eslint": "eslint --ext .js,.html .",
-    "lint:prettier": "prettier \"**/*.js\" --list-different || (echo '↑↑ these files are not prettier formatted ↑↑' && exit 1)",
+    "lint:eslint": "eslint --ext .ts,.html .",
+    "lint:prettier": "prettier \"**/*.ts\" --list-different || (echo '↑↑ these files are not prettier formatted ↑↑' && exit 1)",
     "lint:types": "tsc --noEmit",
-    "release": "npm run build && changeset publish",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "npm run build && changeset publish"
   },
+  "types": "./dist/types/index.d.ts",
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
     "@open-wc/eslint-config": "^9.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
@@ -39,17 +46,12 @@
     "typescript": "^4.9.5"
   },
   "keywords": [
-    "tokens studio",
-    "types",
     "design tokens",
     "figma",
-    "style-dictionary"
+    "style-dictionary",
+    "tokens studio",
+    "types"
   ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts"
-    }
-  },
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,

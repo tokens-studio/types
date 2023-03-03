@@ -1,11 +1,9 @@
 module.exports = {
-  extends: ['@open-wc/eslint-config', 'eslint-config-prettier'],
-  rules: {
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: ['scripts/**/*'],
-      },
-    ],
-  },
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'eslint-config-prettier',
+  ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
 };
