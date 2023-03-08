@@ -27,6 +27,17 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
+      - name: Import Secrets
+        id: secrets
+        uses: hashicorp/vault-action@v2
+        with:
+          url: ${{ vars.VAULT_URL }}
+          role: ${{ vars.VAULT_ROLE }}
+          method: jwt
+          namespace: admin
+          secrets: |
+            ${{ vars.VAULT_PATH }} TOKEN | NPM_TOKEN;
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
@@ -35,4 +46,4 @@ jobs:
           publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ steps.secrets.outputs.NPM_TOKEN }}
