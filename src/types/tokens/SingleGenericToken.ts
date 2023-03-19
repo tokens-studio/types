@@ -3,7 +3,7 @@ import { ColorModifier } from '../Modifier';
 
 export type SingleGenericToken<
   T extends TokenTypes,
-  V = string,
+  V = string | number,
   Named extends boolean = true,
   P = unknown,
 > = {

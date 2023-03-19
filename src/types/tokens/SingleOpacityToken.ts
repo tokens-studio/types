@@ -3,7 +3,7 @@ import { SingleGenericToken } from './SingleGenericToken';
 
 export type SingleOpacityToken<Named extends boolean = true, P = unknown> = SingleGenericToken<
   TokenTypes.OPACITY,
-  string,
+  string | number,
   Named,
   P
 >;

@@ -3,7 +3,7 @@ import { SingleGenericToken } from './SingleGenericToken';
 
 export type SingleOtherToken<Named extends boolean = true, P = unknown> = SingleGenericToken<
   TokenTypes.OTHER,
-  string,
+  string | number,
   Named,
   P
 >;
