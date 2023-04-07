@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.1.3
+
+### Patch Changes
+
+- f1d051f: Add and pass Named generic from DeepKeyTokenMap to SingleToken Named generic.
+
 ## 0.1.2
 
 ### Patch Changes
