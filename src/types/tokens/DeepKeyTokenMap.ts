@@ -1,5 +1,5 @@
 import { SingleToken } from './SingleToken';
 
-export interface DeepKeyTokenMap {
-  [key: string]: DeepKeyTokenMap | SingleToken;
+export interface DeepKeyTokenMap<Named extends boolean = true> {
+  [key: string]: DeepKeyTokenMap<Named> | SingleToken<Named>;
 }
