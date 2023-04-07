@@ -4,3 +4,5 @@ export enum ColorModifierTypes {
   MIX = 'mix',
   ALPHA = 'alpha',
 }
+
+export type ColorModifierUnion = `${ColorModifierTypes}`;

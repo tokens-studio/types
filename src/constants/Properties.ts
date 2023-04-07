@@ -47,3 +47,5 @@ export enum Properties {
   tokenName = 'tokenName',
   description = 'description',
 }
+
+export type PropertiesUnion = `${Properties}`;
