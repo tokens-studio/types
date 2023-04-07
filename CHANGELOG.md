@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.1.2
+
+### Patch Changes
+
+- 9f4dc96: Add unions of enum types. Move constants re-exports to main entrypoint.
+
 ## 0.1.1
 
 ### Patch Changes
