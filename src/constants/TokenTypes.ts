@@ -23,3 +23,5 @@ export enum TokenTypes {
   BORDER = 'border',
   ASSET = 'asset',
 }
+
+export type TokenTypesUnion = `${TokenTypes}`;

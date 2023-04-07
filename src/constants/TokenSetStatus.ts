@@ -3,3 +3,5 @@ export enum TokenSetStatus {
   SOURCE = 'source', // @README this means the token set will be used to resolve references, but will be excluded from styles creation
   ENABLED = 'enabled', // @README this means the token set is fully enabled and will affect style creation
 }
+
+export type TokenSetStatusUnion = `${TokenSetStatus}`;
