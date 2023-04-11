@@ -1,7 +1,7 @@
 {
   "name": "@tokens-studio/types",
   "version": "0.1.3",
-  "description": "",
+  "description": "Typescript types for Tokens Studio primitives",
   "license": "MIT",
   "author": "Joren Broekema <joren.broekema@gmail.com>",
   "repository": {
@@ -9,16 +9,14 @@
     "url": "https://github.com/tokens-studio/types.git"
   },
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/types/index.d.ts"
-    }
-  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --emitDeclarationOnly --declaration",
+    "build": "rollup --config rollup.config.js",
+    "docs": "typedoc",
     "format": "npm run format:eslint && npm run format:prettier",
     "format:eslint": "eslint --ext .js,.html . --fix",
     "format:prettier": "prettier \"**/*.{js,md}\" \"package.json\" --write",
@@ -29,7 +27,7 @@
     "prepare": "husky install",
     "release": "npm run build && changeset publish"
   },
-  "types": "./dist/types/index.d.ts",
+  "types": "dist/esm/index.d.ts",
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
     "@open-wc/eslint-config": "^9.2.0",
@@ -43,6 +41,9 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.3",
     "prettier-package-json": "^2.8.0",
+    "rollup": "^3.20.2",
+    "rollup-plugin-ts": "^3.2.0",
+    "typedoc": "^0.24.1",
     "typescript": "^4.9.5"
   },
   "keywords": [

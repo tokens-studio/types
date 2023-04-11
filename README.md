@@ -15,6 +15,10 @@ With [NPM](https://www.npmjs.com/):
 npm install @tokens-studio/types
 ```
 
+## Documentation
+
+See our documentation site [here](https://tokens-studio.github.io/types/)
+
 ## Usage
 
 ```ts

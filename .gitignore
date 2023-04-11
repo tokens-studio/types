@@ -13,5 +13,7 @@ npm-debug.log
 
 ## temp folders
 /coverage/
+types/
+docs/
 
 dist/

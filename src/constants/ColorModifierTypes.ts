@@ -1,4 +1,4 @@
-export enum ColorModifierTypes {
+export const enum ColorModifierTypes {
   LIGHTEN = 'lighten',
   DARKEN = 'darken',
   MIX = 'mix',

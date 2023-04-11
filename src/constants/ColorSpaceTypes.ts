@@ -1,4 +1,4 @@
-export enum ColorSpaceTypes {
+export const enum ColorSpaceTypes {
   LCH = 'lch',
   SRGB = 'srgb',
   P3 = 'p3',

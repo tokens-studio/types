@@ -1,4 +1,4 @@
-export enum BoxShadowTypes {
+export const enum BoxShadowTypes {
   DROP_SHADOW = 'dropShadow',
   INNER_SHADOW = 'innerShadow',
 }
