@@ -11,6 +11,8 @@
   "type": "module",
   "exports": {
     ".": {
+      "import": "./dist/types/index.js",
+      "require": "./dist/types/index.cjs",
       "types": "./dist/types/index.d.ts"
     }
   },
@@ -18,7 +20,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc --emitDeclarationOnly --declaration",
+    "build": "rimraf dist && run-p build:*",
+    "build:js": "rollup -c rollup.config.js",
+    "build:types": "tsc --emitDeclarationOnly --declaration",
     "format": "npm run format:eslint && npm run format:prettier",
     "format:eslint": "eslint --ext .js,.html . --fix",
     "format:prettier": "prettier \"**/*.{js,md}\" \"package.json\" --write",
@@ -33,6 +37,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
     "@open-wc/eslint-config": "^9.2.0",
+    "@rollup/plugin-typescript": "^11.1.0",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.32.0",
@@ -43,6 +48,8 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.3",
     "prettier-package-json": "^2.8.0",
+    "rimraf": "^5.0.0",
+    "rollup": "^3.20.2",
     "typescript": "^4.9.5"
   },
   "keywords": [
