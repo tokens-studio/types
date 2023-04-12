@@ -1,4 +1,4 @@
-export const enum TokenTypes {
+export enum TokenTypes {
   OTHER = 'other',
   COLOR = 'color',
   BORDER_RADIUS = 'borderRadius',

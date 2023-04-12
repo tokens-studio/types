@@ -1,4 +1,4 @@
-export const enum Properties {
+export enum Properties {
   sizing = 'sizing',
   height = 'height',
   width = 'width',
