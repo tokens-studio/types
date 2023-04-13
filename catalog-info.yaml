@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: types
+  description: Type information for tokens studio
+  links:
+    - url: https://tokens-studio.github.io/types/
+      title: Github pages
+      icon: dashboard
+  annotations:
+    github.com/project-slug: tokens-studio/types
+spec:
+  type: library 
+  lifecycle: production
+  system: tokens-studio
+  owner: user:default/joren@hyma.io

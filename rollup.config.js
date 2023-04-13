@@ -1,23 +1,22 @@
-import ts from 'rollup-plugin-ts';
-import pkg from './package.json' assert { type: 'json' };
+import typescript from '@rollup/plugin-typescript';
 
-export default {
-  input: './src/index.ts',
-  output: [
-    {
-      file: pkg.exports['.'].require,
-      format: 'cjs',
-      sourcemap: true,
-    },
-    {
-      file: pkg.exports['.'].import,
-      format: 'esm',
-      sourcemap: true,
-    },
-  ],
-  plugins: [
-    ts({
-      tsconfig: 'tsconfig.json',
-    }),
-  ],
+const conf = {
+  input: './src/types/index.ts',
+  output: {
+    preserveModules: true,
+    dir: 'dist',
+  },
+  plugins: [typescript({ compilerOptions: { emitDeclarationOnly: true } })],
 };
+
+export default [
+  conf,
+  {
+    ...conf,
+    output: {
+      ...conf.output,
+      format: 'cjs',
+      entryFileNames: '[name].cjs',
+    },
+  },
+];

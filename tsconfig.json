@@ -13,7 +13,7 @@
     "types": ["node"],
     "esModuleInterop": true,
     "suppressImplicitAnyIndexErrors": true,
-    "outDir": "./types"
+    "outDir": "dist"
   },
   "include": ["src/*.ts"],
   "exclude": ["node_modules"]
