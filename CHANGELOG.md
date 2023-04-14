@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.2.1
+
+### Patch Changes
+
+- d31aa41: Add format property to color modifier.
+
 ## 0.2.0
 
 ### Minor Changes
