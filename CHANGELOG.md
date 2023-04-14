@@ -1,5 +1,15 @@
 # @tokens-studio/types
 
+## 0.2.0
+
+### Minor Changes
+
+- 07e260c: Export enums through CJS/ESM entrypoints, as enums is not a type-level extension on JS, but rather, it contains actual constants (values).
+
+### Patch Changes
+
+- 9adca83: Export missing types.
+
 ## 0.1.3
 
 ### Patch Changes
