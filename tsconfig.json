@@ -3,9 +3,11 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
+    "declaration": true,
     "lib": ["ESNext", "dom"],
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "resolveJsonModule": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
     "types": ["node"],
@@ -13,6 +15,6 @@
     "suppressImplicitAnyIndexErrors": true,
     "outDir": "dist"
   },
-  "include": ["**/*.ts"],
+  "include": ["src/*.ts"],
   "exclude": ["node_modules"]
 }

@@ -23,9 +23,10 @@
     "build": "rimraf dist && run-p build:*",
     "build:js": "rollup -c rollup.config.js",
     "build:types": "tsc --emitDeclarationOnly --declaration",
+    "docs": "typedoc",
     "format": "npm run format:eslint && npm run format:prettier",
-    "format:eslint": "eslint --ext .js,.html . --fix",
-    "format:prettier": "prettier \"**/*.{js,md}\" \"package.json\" --write",
+    "format:eslint": "eslint --ext .ts,.js,.html . --fix",
+    "format:prettier": "prettier \"**/*.{ts,js,md,json}\" --write",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint --ext .ts,.html .",
     "lint:prettier": "prettier \"**/*.ts\" --list-different || (echo '↑↑ these files are not prettier formatted ↑↑' && exit 1)",
@@ -50,6 +51,7 @@
     "prettier-package-json": "^2.8.0",
     "rimraf": "^5.0.0",
     "rollup": "^3.20.2",
+    "typedoc": "^0.24.1",
     "typescript": "^4.9.5"
   },
   "keywords": [
