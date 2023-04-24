@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.2.2
+
+### Patch Changes
+
+- bb62787: Align SingleSpacingToken parameters, add it to SingleToken union type.
+
 ## 0.2.1
 
 ### Patch Changes
