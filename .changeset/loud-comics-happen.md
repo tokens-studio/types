@@ -2,4 +2,4 @@
 '@tokens-studio/types': patch
 ---
 
-Add SingleSpacingToken
+Align SingleSpacingToken parameters, add it to SingleToken union type.
