@@ -43,5 +43,5 @@ export type SingleToken<Named extends boolean = true, P = unknown> =
   | SingleCompositionToken<Named, P>
   | SingleCompositionToken<Named, P>
   | SingleDimensionToken<Named, P>
-  | SingleAssetToken<Named, P>
+  | SingleSizingToken<Named, P>
   | SingleAssetToken<Named, P>;
