@@ -19,6 +19,7 @@ import { SingleCompositionToken } from './SingleCompositionToken';
 import { SingleDimensionToken } from './SingleDimensionToken';
 import { SingleBorderToken } from './SingleBorderToken';
 import { SingleAssetToken } from './SingleAssetToken';
+import { SingleSizingToken } from './SingleSizingToken';
 
 export type SingleToken<Named extends boolean = true, P = unknown> =
   | SingleColorToken<Named, P>
@@ -42,4 +43,5 @@ export type SingleToken<Named extends boolean = true, P = unknown> =
   | SingleCompositionToken<Named, P>
   | SingleCompositionToken<Named, P>
   | SingleDimensionToken<Named, P>
+  | SingleSizingToken<Named, P>
   | SingleAssetToken<Named, P>;
