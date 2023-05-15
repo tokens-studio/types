@@ -1,6 +1,6 @@
-import { TokenTypes } from '../../constants/TokenTypes';
-import { TokenTextDecorationValue } from '../values';
-import { SingleGenericToken } from './SingleGenericToken';
+import { TokenTypes } from '../../constants/TokenTypes.js';
+import { TokenTextDecorationValue } from '../values/index.js';
+import { SingleGenericToken } from './SingleGenericToken.js';
 
 export type SingleTextDecorationToken<
   Named extends boolean = true,

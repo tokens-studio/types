@@ -1,25 +1,25 @@
-import { SingleColorToken } from './SingleColorToken';
-import { SingleBorderRadiusToken } from './SingleBorderRadiusToken';
-import { SingleTextToken } from './SingleTextToken';
-import { SingleSpacingToken } from './SingleSpacingToken';
-import { SingleTypographyToken } from './SingleTypographyToken';
-import { SingleOpacityToken } from './SingleOpacityToken';
-import { SingleBorderWidthToken } from './SingleBorderWidthToken';
-import { SingleBoxShadowToken } from './SingleBoxShadowToken';
-import { SingleFontFamiliesToken } from './SingleFontFamiliesToken';
-import { SingleFontWeightsToken } from './SingleFontWeightsToken';
-import { SingleLineHeightsToken } from './SingleLineHeightsToken';
-import { SingleLetterSpacingToken } from './SingleLetterSpacingToken';
-import { SingleFontSizesToken } from './SingleFontSizesToken';
-import { SingleParagraphSpacingToken } from './SingleParagraphSpacingToken';
-import { SingleTextDecorationToken } from './SingleTextDecorationToken';
-import { SingleTextCaseToken } from './SingleTextCaseToken';
-import { SingleOtherToken } from './SingleOtherToken';
-import { SingleCompositionToken } from './SingleCompositionToken';
-import { SingleDimensionToken } from './SingleDimensionToken';
-import { SingleBorderToken } from './SingleBorderToken';
-import { SingleAssetToken } from './SingleAssetToken';
-import { SingleSizingToken } from './SingleSizingToken';
+import { SingleColorToken } from './SingleColorToken.js';
+import { SingleBorderRadiusToken } from './SingleBorderRadiusToken.js';
+import { SingleTextToken } from './SingleTextToken.js';
+import { SingleSpacingToken } from './SingleSpacingToken.js';
+import { SingleTypographyToken } from './SingleTypographyToken.js';
+import { SingleOpacityToken } from './SingleOpacityToken.js';
+import { SingleBorderWidthToken } from './SingleBorderWidthToken.js';
+import { SingleBoxShadowToken } from './SingleBoxShadowToken.js';
+import { SingleFontFamiliesToken } from './SingleFontFamiliesToken.js';
+import { SingleFontWeightsToken } from './SingleFontWeightsToken.js';
+import { SingleLineHeightsToken } from './SingleLineHeightsToken.js';
+import { SingleLetterSpacingToken } from './SingleLetterSpacingToken.js';
+import { SingleFontSizesToken } from './SingleFontSizesToken.js';
+import { SingleParagraphSpacingToken } from './SingleParagraphSpacingToken.js';
+import { SingleTextDecorationToken } from './SingleTextDecorationToken.js';
+import { SingleTextCaseToken } from './SingleTextCaseToken.js';
+import { SingleOtherToken } from './SingleOtherToken.js';
+import { SingleCompositionToken } from './SingleCompositionToken.js';
+import { SingleDimensionToken } from './SingleDimensionToken.js';
+import { SingleBorderToken } from './SingleBorderToken.js';
+import { SingleAssetToken } from './SingleAssetToken.js';
+import { SingleSizingToken } from './SingleSizingToken.js';
 
 export type SingleToken<Named extends boolean = true, P = unknown> =
   | SingleColorToken<Named, P>

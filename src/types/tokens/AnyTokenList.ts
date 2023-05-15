@@ -1,3 +1,3 @@
-import { SingleToken } from './SingleToken';
+import { SingleToken } from './SingleToken.js';
 
 export type AnyTokenList = SingleToken[];

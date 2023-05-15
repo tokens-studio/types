@@ -1,4 +1,4 @@
-import { BoxShadowTypes } from '../../constants/BoxShadowTypes';
+import { BoxShadowTypes } from '../../constants/BoxShadowTypes.js';
 
 export type TokenBoxshadowValue = {
   color: string;

@@ -1,4 +1,4 @@
-import { TokenTypes } from '../../constants/TokenTypes';
+import { TokenTypes } from '../../constants/TokenTypes.js';
 
 interface StringSchemaType {
   type: 'string';
