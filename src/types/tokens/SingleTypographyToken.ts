@@ -1,6 +1,6 @@
-import { TokenTypes } from '../../constants/TokenTypes';
-import { TokenTypographyValue } from '../values';
-import { SingleGenericToken } from './SingleGenericToken';
+import { TokenTypes } from '../../constants/TokenTypes.js';
+import { TokenTypographyValue } from '../values/index.js';
+import { SingleGenericToken } from './SingleGenericToken.js';
 
 export type SingleTypographyToken<Named extends boolean = true, P = unknown> = SingleGenericToken<
   TokenTypes.TYPOGRAPHY,

@@ -1,5 +1,5 @@
-import { TokenTypes } from '../../constants/TokenTypes';
-import { ColorModifier } from '../Modifier';
+import { TokenTypes } from '../../constants/TokenTypes.js';
+import { ColorModifier } from '../Modifier.js';
 
 export type SingleGenericToken<
   T extends TokenTypes,

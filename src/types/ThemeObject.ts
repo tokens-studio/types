@@ -1,4 +1,4 @@
-import { TokenSetStatus } from '../constants/TokenSetStatus';
+import { TokenSetStatus } from '../constants/TokenSetStatus.js';
 
 export type ThemeObject = {
   // @README let's decouple the name and ID

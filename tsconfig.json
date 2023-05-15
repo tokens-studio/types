@@ -2,8 +2,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
     "declaration": true,
+    "moduleResolution": "nodenext",
     "lib": ["ESNext", "dom"],
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -12,7 +12,6 @@
     "alwaysStrict": true,
     "types": ["node"],
     "esModuleInterop": true,
-    "suppressImplicitAnyIndexErrors": true,
     "outDir": "dist"
   },
   "include": ["src/*.ts"],

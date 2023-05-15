@@ -1,4 +1,4 @@
-import { SingleToken } from './SingleToken';
+import { SingleToken } from './SingleToken.js';
 
 export type ImportToken<Named extends boolean = true> = SingleToken<
   Named,

@@ -1,5 +1,5 @@
-import { ColorModifierTypes } from '../constants/ColorModifierTypes';
-import { ColorSpaceTypes } from '../constants/ColorSpaceTypes';
+import { ColorModifierTypes } from '../constants/ColorModifierTypes.js';
+import { ColorSpaceTypes } from '../constants/ColorSpaceTypes.js';
 
 interface Modifier<T extends string, V> {
   type: T;

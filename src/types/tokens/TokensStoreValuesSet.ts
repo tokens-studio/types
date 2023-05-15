@@ -1,5 +1,5 @@
-import { AnyTokenSet } from './AnyTokenSet';
-import { AnyTokenList } from './AnyTokenList';
+import { AnyTokenSet } from './AnyTokenSet.js';
+import { AnyTokenList } from './AnyTokenList.js';
 
 // @TODO not sure what this should be / where this is to be used
 export type TokensStoreValuesSet =
