@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.2.3
+
+### Patch Changes
+
+- 4711628: Support nodenext module resolution compliance
+
 ## 0.2.2
 
 ### Patch Changes
