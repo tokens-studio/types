@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.2.4
+
+### Patch Changes
+
+- 45729e2: Add group property to ThemeObject for multi-dimensional theming support.
+
 ## 0.2.3
 
 ### Patch Changes
