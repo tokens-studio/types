@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.2.5
+
+### Patch Changes
+
+- 1bd2eaf: Add enums for complex token values
+
 ## 0.2.4
 
 ### Patch Changes
