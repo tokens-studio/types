@@ -22,6 +22,8 @@ export enum TokenTypes {
   DIMENSION = 'dimension',
   BORDER = 'border',
   ASSET = 'asset',
+  BOOLEAN = 'boolean',
+  NUMBER = 'number',
 }
 
 export type TokenTypesUnion = `${TokenTypes}`;
