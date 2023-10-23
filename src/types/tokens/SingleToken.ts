@@ -20,6 +20,8 @@ import { SingleDimensionToken } from './SingleDimensionToken.js';
 import { SingleBorderToken } from './SingleBorderToken.js';
 import { SingleAssetToken } from './SingleAssetToken.js';
 import { SingleSizingToken } from './SingleSizingToken.js';
+import { SingleBooleanToken } from './SingleBooleanToken.js';
+import { SingleNumberToken } from './SingleNumberToken.js';
 
 export type SingleToken<Named extends boolean = true, P = unknown> =
   | SingleColorToken<Named, P>
@@ -41,7 +43,8 @@ export type SingleToken<Named extends boolean = true, P = unknown> =
   | SingleOtherToken<Named, P>
   | SingleBorderToken<Named, P>
   | SingleCompositionToken<Named, P>
-  | SingleCompositionToken<Named, P>
   | SingleDimensionToken<Named, P>
   | SingleSizingToken<Named, P>
-  | SingleAssetToken<Named, P>;
+  | SingleAssetToken<Named, P>
+  | SingleBooleanToken<Named, P>
+  | SingleNumberToken<Named, P>
