@@ -5,4 +5,4 @@ export enum ColorSpaceTypes {
   HSL = 'hsl',
 }
 
-export type ColorSpaceUnion = `${ColorSpaceTypes}`;
+export type ColorSpaceTypesUnion = `${ColorSpaceTypes}`;

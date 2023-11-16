@@ -12,6 +12,7 @@ export * from './ThemeObject.js';
 export * from './UsedTokenSetsMap.js';
 export * from './valueTypes.js';
 export * from '../constants/BorderValues.js';
+export * from '../constants/StrokeStyleValues.js';
 export * from '../constants/BoxShadowValues.js';
 export * from '../constants/TypographyValues.js';
 

@@ -9,3 +9,5 @@ export enum TypographyValues {
   TEXT_DECORATION = 'textDecoration',
   TEXT_CASE = 'textCase',
 }
+
+export type TypographyValuesUnion = `${TypographyValues}`;

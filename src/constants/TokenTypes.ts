@@ -8,6 +8,7 @@ export enum TokenTypes {
   TYPOGRAPHY = 'typography',
   OPACITY = 'opacity',
   BORDER_WIDTH = 'borderWidth',
+  STROKE_STYLE = 'strokeStyle',
   BOX_SHADOW = 'boxShadow',
   FONT_FAMILIES = 'fontFamilies',
   FONT_WEIGHTS = 'fontWeights',
