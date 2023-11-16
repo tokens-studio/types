@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.3.0
+
+### Minor Changes
+
+- fc3badc: BREAKING: add strokeStyle token type and values enum, rename the following 3 type exports for consistency: BoxShadowUnion -> BoxShadowTypesUnion, ColorModifierUnion -> ColorModifierTypesUnion, ColorSpaceUnion -> ColorSpaceTypesUnion. Export union types for the enum constants that did not yet have one.
+
 ## 0.2.5
 
 ### Patch Changes
