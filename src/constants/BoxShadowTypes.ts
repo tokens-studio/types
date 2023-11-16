@@ -3,4 +3,4 @@ export enum BoxShadowTypes {
   INNER_SHADOW = 'innerShadow',
 }
 
-export type BoxShadowUnion = `${BoxShadowTypes}`;
+export type BoxShadowTypesUnion = `${BoxShadowTypes}`;

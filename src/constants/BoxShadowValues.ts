@@ -7,3 +7,5 @@ export enum BoxShadowValues {
   SPREAD = 'spread',
   BLEND_MODE = 'blendMode',
 }
+
+export type BoxShadowValuesUnion = `${BoxShadowValues}`;

@@ -3,3 +3,5 @@ export enum BorderValues {
   BORDER_WIDTH = 'width',
   BORDER_STYLE = 'style',
 }
+
+export type BorderValuesUnion = `${BorderValues}`;
