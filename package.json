@@ -20,7 +20,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rimraf dist && run-p build:*",
+    "build": "rimraf dist && run-p 'build:*'",
     "build:js": "rollup -c rollup.config.js",
     "build:types": "tsc --emitDeclarationOnly --declaration",
     "docs": "typedoc",
