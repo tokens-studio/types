@@ -39,6 +39,7 @@
     "@changesets/cli": "^2.26.0",
     "@open-wc/eslint-config": "^9.2.0",
     "@rollup/plugin-typescript": "^11.1.0",
+    "@types/node": "^20.11.5",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.32.0",
