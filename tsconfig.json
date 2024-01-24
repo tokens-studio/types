@@ -10,7 +10,6 @@
     "resolveJsonModule": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    "types": ["node"],
     "esModuleInterop": true,
     "outDir": "dist"
   },
