@@ -1,16 +1,14 @@
 import { TokenTypes } from '../../constants/TokenTypes.js';
 import { ColorModifier } from '../Modifier.js';
 
-export type SingleGenericToken<
-  T extends TokenTypes,
-  V = string | number,
-  Named extends boolean = true,
-  P = unknown,
-> = {
-  type: T;
-  value: V;
+type _SingleGenericToken<T, V, Named, P> = {
+  type?: T;
+  $type?: T;
+  value?: V;
+  $value?: V;
   rawValue?: V;
   description?: string;
+  $description?: string;
   oldDescription?: string;
   oldValue?: V;
   internal__Parent?: string;
@@ -24,3 +22,46 @@ export type SingleGenericToken<
       name?: string;
     }) &
   P;
+
+/**
+ * Utility to require one of two optional properties,
+ * e.g. $value OR value must exist, but not both.
+ * 
+ * Explanation, we pass in '$value' | 'value':
+ * 1. R extends keyof T = keyof T  ->   means that what is passed in (R) must be/extend keys of first arg (T)
+ * 
+ * 2. Omit<T, R> means what we pass in (R) is omitted from T
+ * 
+ * 3. 2nd part of the union simplifies to   ->   { [K in keyof Required<T>]... }['$value'|'value']
+ * 
+ * 4. which then simplifies to  ->  { $value: ...; value: ...; }['$value'|'value']
+ * 
+ * 5. which then simplifies to  ->  { 
+ *      $value: Required<{ '$value'?: string }> & { 'value'?: undefined }; 
+ *      value: Required<{ 'value'?: string }> & { '$value'?: undefined };
+ *    }['$value'|'value']
+ * 
+ * 6. which then simplifies to  ->  { 
+ *      $value: { $value: string }; 
+ *      value: { value: string };
+ *    }['$value'|'value']
+ * 
+ * 6. and finally  ->  { $value: string } | { value: string }
+ * 
+ */
+type RequireOnlyOne<T, Keys extends keyof T = keyof T> = 
+  Omit<T, Keys> & 
+  {
+    [K in keyof Required<T>]: Required<Pick<T, K>> & Partial<Record<Exclude<Keys, K>, undefined>>;
+  }[Keys];
+
+/**
+ * `$type` and `type` as well as `$value` and `value`, but for each pair respectively, either
+ * the $prop or the without $ prop needs to be present.
+ */
+export type SingleGenericToken<
+  T extends TokenTypes,
+  V = string | number,
+  Named extends boolean = true,
+  P = unknown
+> = RequireOnlyOne<_SingleGenericToken<T, V, Named, P>, '$value' | 'value'>;  
