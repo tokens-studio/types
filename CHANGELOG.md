@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.4.0
+
+### Minor Changes
+
+- e994ecc: Add compatibility with W3C DTCG specification for design tokens.
+
 ## 0.3.0
 
 ### Minor Changes
