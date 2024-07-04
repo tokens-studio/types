@@ -1,5 +1,15 @@
 # @tokens-studio/types
 
+## 0.5.0
+
+### Minor Changes
+
+- c38c1b9: BREAKING: $extensions['studio.tokens'] is now optional, modify inner prop is optional, $extensions is extendable with other namespaces, add originalType meta prop to studio.tokens namespace.
+
+### Patch Changes
+
+- 93f1cc3: Allow token value to be string for any token types, since it can always be a reference which is of type string.
+
 ## 0.4.0
 
 ### Minor Changes
