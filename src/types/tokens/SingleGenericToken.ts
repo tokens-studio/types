@@ -13,7 +13,16 @@ type _SingleGenericToken<T, V, Named, P> = {
   oldValue?: V;
   internal__Parent?: string;
   inheritTypeLevel?: number;
-  $extensions?: { 'studio.tokens': { modify: ColorModifier } };
+  $extensions?: { 
+    'studio.tokens'?: { 
+      modify?: ColorModifier,
+      // this may be set by sd-transforms when aligning the Tokens Studio types to the DTCG types
+      // so that certain transforms can still match tokens e.g. letterSpacing -> dimension, but the letterspacing
+      // transform only wants to match for letterSpacing tokens, not all dimension tokens.
+      originalType?: T;
+    },
+    [key: string]: unknown
+  };
 } & (Named extends true
   ? {
       name: string;
