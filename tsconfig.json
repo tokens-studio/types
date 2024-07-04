@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "NodeNext",
     "declaration": true,
-    "moduleResolution": "nodenext",
+    "moduleResolution": "NodeNext",
     "lib": ["ESNext", "dom"],
     "allowSyntheticDefaultImports": true,
     "strict": true,
