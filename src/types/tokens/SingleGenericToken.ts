@@ -4,13 +4,13 @@ import { ColorModifier } from '../Modifier.js';
 type _SingleGenericToken<T, V, Named, P> = {
   type?: T;
   $type?: T;
-  value?: V & string; // & string because token value can always be a reference!
-  $value?: V & string;
-  rawValue?: V & string;
+  value?: V | string; // | string because token value can always be a reference!
+  $value?: V | string;
+  rawValue?: V | string;
   description?: string;
   $description?: string;
   oldDescription?: string;
-  oldValue?: V & string;
+  oldValue?: V | string;
   internal__Parent?: string;
   inheritTypeLevel?: number;
   $extensions?: { 
