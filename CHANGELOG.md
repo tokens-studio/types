@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.5.1
+
+### Patch Changes
+
+- e724106: Fix wrong union type, should be `|` and not `&`.
+
 ## 0.5.0
 
 ### Minor Changes
