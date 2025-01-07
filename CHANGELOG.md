@@ -1,5 +1,11 @@
 # @tokens-studio/types
 
+## 0.5.2
+
+### Patch Changes
+
+- 35c439c: Add missing figma-related properties to the ThemeObject type
+
 ## 0.5.1
 
 ### Patch Changes
